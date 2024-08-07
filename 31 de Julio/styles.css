@@ -1,6 +1,131 @@
-/*Ejemplo de box model*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@100..900&display=swap');
+
+/*Ejemplo de box model
 article{
     border: 8px rgb(217, 118, 118) solid;
     padding: 2rem 6rem;
     margin: 2rem;
+}
+    */
+
+/* ejemplos de ID y Class
+.primer {
+    line-height: 3rem;
+    color: #5513a1;
+}
+
+.segundo {
+    line-height: 2.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #8f2818;
+}
+
+#lista {
+    list-style: none;
+    font-size: .6;
+    color: #50d8d8;
+    line-height: 1.4;
+}
+    */
+
+    /* reticula */
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+}
+
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+main {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 1rem;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* Estilos menu de navegacion */
+
+#logo {
+    width: 50px;
+}
+
+nav {
+    background-color: #f19b2b;
+    padding: 1rem 3rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+nav ul a {
+    text-decoration: none;
+    padding: 2rem;
+    color: #ffffff;
+}
+
+/* Estilo de footer*/
+footer{
+    background-color: #e7d3a4;
+    padding: 3rem ;
+    font-family: "Anton", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+/*Estilos tipogràficos*/
+
+h1 {
+    font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  padding: 2rem 0;
+}
+
+.parrafo2 {
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 1.2;
+  line-height: 2rem;
+}
+
+.primer {
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 1.2;
+  line-height: 2rem;
+}
+
+figcaption {
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: .8rem;
+}
+
+/* Estilos de imagen */
+
+#imagenprincipal {
+    width: 100%;
+    object-fit: cover;
 }
