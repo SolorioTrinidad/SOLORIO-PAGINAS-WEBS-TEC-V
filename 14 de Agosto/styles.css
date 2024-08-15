@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+h1{
+    padding: 1rem;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: #a0e8e8;
+}
+
+main {
+    background-color: #8361a4;
+}
+
+aside {
+    background-color: #d78ce6;
+}
+
+footer {
+    background-color: #e69b9b;
+}  
+
+        /* Diseño responsivo, esto es media query */
+@media only screen and (min-width: 600px){
+    #container {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr ;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        gap: 1rem;
+        grid-template-areas:
+        "cabeza cabeza ."
+        "principal principal ."
+        "pie pie pie"    
+        ;
+    }
+    
+    header {
+        grid-area: cabeza;
+    }
+    
+    main {
+        grid-area: principal; 
+    }
+    
+    aside {
+        /* grid-area: lado; */
+        grid-column: 2 / 4;
+        grid-row: 1 / 3;
+    }
+    
+    footer {
+        grid-area: pie;
+    }   
+}
+
+@media only screen and (max-width: 60px) {
+    /*body {
+        background-color: #412b2b;
+    } */
+    #container {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr ;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        gap: 1rem; 
+    }
+}
