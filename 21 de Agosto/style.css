@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Sanchez:ital@0;1&display=swap');
+@import url('https://unpkg.com/@uiw/reset.css@1.0.6/reset.css');
+
+.inter400 {
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;}
+
+.sanchez-regular {
+        font-family: "Sanchez", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+.sanchez-regular-italic {
+        font-family: "Sanchez", serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+
+      h1 {
+        font-size: 4rem ;
+      }
+
+      h2{
+        font-size: 2rem ;
+      }
+
+      p{
+        font-size: 1.6 ;
+      }
+
+      /*COLUMNAS */
+
+      .columnas {
+        columns: 3 400px;
+        column-gap: 1rem ;
+    }
+
+    /*IMAGEN*/
+
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .clip-me{
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    }
+    .recortado{
+        float: left;
+        clip-path: circle(30% at 50% 50%);
+        shape-outside: circle(50%);
+        margin-left: -100px;
+
+    }
+
+    /*Margen del contenido principal*/
+    main{
+        margin: 0 1rem;
+    }
