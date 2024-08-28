@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Js Libraries</title>
+    <style>
+        svg {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="head borde">
+            <p>Header</p>
+        </header>
+        <main class="main borde">
+            <h1>Librerias de JS.</h1>
+            <p>Vivus is a lightweight JavaScript class (with no dependencies) that allows you to animate SVGs, giving them the appearance of being drawn. There are a variety of different animations available, as well as the option to create a custom script to draw your SVG in whatever way you like.</p>
+            <div id="my-div"></div>
+        </main>
+        <aside class="lado borde">
+            <p>Aside</p>
+        </aside>
+        <footer class="pie borde">
+            <p>Footer</p>
+        </footer>
+    </div>
+    <script src="js/vivus.js"></script>
+    <script>
+        new Vivus ('my-div', {duration: 20, type: 'scenario-sync', file: 'img/POGO2.svg'} ,);
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.head', {distance: '150%', origin: 'top'});
+        ScrollReveal().reveal('.main', {delay: 500, scale: 0.85 });
+        ScrollReveal().reveal('.lado', {delay: 1000, rotate: { x: 20, z: 20 }});
+        ScrollReveal().reveal('.pie', {delay: 1200, distance: '150%', origin: 'bottom'});
+    </script>
+</body>
+</html>
